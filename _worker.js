@@ -60,7 +60,7 @@ export default {
                         const vlessConfig = await getVLESSConfig(userID, request.headers.get('Host'), sub, userAgent, RproxyIP);
                         const now = Date.now();
                         const timestamp = Math.floor(now / 1000);
-                        const expire = 4102329600;//2099-12-31
+                        const expire = 32503651200;//2099-12-31
                         const today = new Date(now);
                         today.setHours(0, 0, 0, 0);
                         const UD = Math.floor(((now - today.getTime())/86400000) * 24 * 1099511627776 / 2);
